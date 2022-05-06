@@ -1,0 +1,184 @@
+*::-webkit-scrollbar {
+    width: 0;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: none;
+  }
+  
+.ps_games_row {
+    display: flex;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-inline: 4%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    overflow-x: clip;
+    counter-reset: item;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  
+
+}
+.ps_games_container {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-block: 20px;
+    /* width: 10vw; */
+    transition: all 0.3s ease-in-out;
+ }
+.ps_games_item {
+    width: 0;
+    height:0;
+    margin-inline-end: 25px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-radius: 17px;
+    background-color: rgba(0, 0, 0, 0.650);
+    cursor: pointer;
+    /* cursor: url('https://cdn.custom-cursor.com/db/5309/32/playstation-5-and-controller-pointer.png'), auto; */
+    /* cursor:url(https://cdn.custom-cursor.com/db/cursor/32/Playstation_Logo_Cursor.png), auto; */
+    cursor:url(https://cdn.custom-cursor.com/db/5310/32/playstation-5-and-controller-cursor.png),auto;
+
+    transform-origin: top;
+    transition: all 250ms ease-in-out;
+    will-change: width, height;
+    position: relative;
+    counter-increment: item;
+    scroll-snap-align: start;
+
+}
+.ps_games_item.show {
+    width: 107px;
+    height:105px;
+}
+.ps_games_item_border {
+    /* content: ''; */
+    position: absolute;
+    top: -3.5px;
+    left: -3.5px;
+    width: 112px;
+    height:110px;
+    box-shadow: 1px 3px 20px 3px rgba(0, 0, 0, 0.2), 0px -2px 0px 1px rgba(255, 255, 255, 0.6),0px 2px 0px 1px rgba(255, 255, 255, 0.8);
+    border: 1px solid #ffffff99;
+    border-radius: 20px;
+    transition: all 250ms ease-in-out;
+    will-change: width, height, border, opacity;
+    opacity: 0;
+
+}
+.ps_games_item_image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.ps_games_item_image img {
+    /* width: 100%;
+    height: 100%; */
+    object-fit:cover;
+}
+.ps_games_item_name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 200ms ease-in, opacity 200ms ease-in;
+    position: absolute;
+    right: auto;
+    left: 100%;
+    bottom: 25px;
+    white-space: nowrap;
+    transition-delay: 0;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+.ps_games_item_gen {
+    padding:5px 10px;
+    background:rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 800;
+    backdrop-filter: blur(4px);
+    letter-spacing:2px;
+    margin-inline-end: 10px;
+}
+.ps_games_item_container {
+    display: flex;
+    position: relative;
+    animation-name: revealleft;
+    transform-origin: bottom right;
+    animation-duration: 200ms;
+    animation-delay: calc(var(--animation-order) * 50ms);
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    opacity:0;
+}
+
+ 
+@keyframes revealleft {
+    0% {
+        opacity: 0;
+        transform: translateX(30%) scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+.ps_games_item_container.active .ps_games_item {
+    width: 167px;
+    height:165px;
+    border-radius: 27px;
+}
+
+.ps_games_item_container.active .ps_games_item_border {
+    width: 172px;
+    height:170px;
+    border-radius: 29px;
+    opacity: 1;
+}
+.ps_games_item_container.active .ps_games_item_name{
+    font-weight: 400;
+    animation: animation-fade-left 100ms 0.26s linear forwards;
+    z-index: -1;
+}
+
+
+
+@keyframes animation-fade-left {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+    }
+}

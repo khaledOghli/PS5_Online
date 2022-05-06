@@ -1,0 +1,230 @@
+[
+    {
+        "id": 1,
+        "name": "PlayStation Store",
+        "image": "./images/psStore_logo.png",
+        "background": "./images/ps-store.jpeg",
+        "logo":"./images/ratchetClank_logo.png",
+        "song":"",
+        "price":"",
+        "platform":"",
+        "mustSee":[
+            {
+                "id": 1,
+                "name": "Gotham Knights",
+                "image": "https://gmedia.playstation.com/is/image/SIEPDC/gotham-knights-store-art-01-02nov21$en",
+                "background": "https://gmedia.playstation.com/is/image/SIEPDC/gotham-knights-store-art-01-02nov21$en"
+            },
+            {
+                "id": 2,
+                "name": "Hogwarts Legacy",
+                "image": "https://gmedia.playstation.com/is/image/SIEPDC/hogwarts-packshot-thumb-01-en-12jan21.jpg",
+                "background": "https://gmedia.playstation.com/is/image/SIEPDC/hogwarts-packshot-thumb-01-en-12jan21.jpg"
+            },
+            {
+                "id": 3,
+                "name": "Forspoken",
+                "image": "https://gmedia.playstation.com/is/image/SIEPDC/forspoken-pack-01-en-ps5-06jan22",
+                "background": "https://gmedia.playstation.com/is/image/SIEPDC/forspoken-pack-01-en-ps5-06jan22"
+            },
+            {
+                "id": 4,
+                "name": "God Of War Ragnarok",
+                "image": "https://gmedia.playstation.com/is/image/SIEPDC/god-of-war-ragnarok-store-art-01-10sep21$en",
+                "background": "https://gmedia.playstation.com/is/image/SIEPDC/god-of-war-ragnarok-store-art-01-10sep21$en"
+            },
+            {
+                "id": 5,
+                "name": "Oxenfree",
+                "image": "https://gmedia.playstation.com/is/image/SIEPDC/oxenfree-ii-lost-signals-store-art-01-ps4-03dec21$en",
+                "background": "https://gmedia.playstation.com/is/image/SIEPDC/oxenfree-ii-lost-signals-store-art-01-ps4-03dec21$en"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Demons Souls",
+        "image": "./images/DemonSouls_thumb.jpeg",
+        "background": "./images/demonSouls.jpeg",
+        "logo":"./images/demonSouls_logo2.png",
+        "song":"./songs/DemonSouls_song.mp3",
+        "price":"55",
+        "platform":"PS5",
+        "description":"The story of a group of demons who are sent to the past to retrieve a lost soul.",
+        "genre":"Action",
+        "trophy": {
+            "all":49,
+            "platinum": 0,
+            "gold": 7,
+            "silver": 11,
+            "bronze": 9
+        }
+
+    },
+    {
+        "id": 3,
+        "name": "Persona 5 Strike",
+        "image": "./images/persona5_thumb.jpg",
+        "background": "./images/personaStrike.jpeg",
+        "logo":"./images/personaStrike_logo2.png",
+        "song":"./songs/persona5_song.mp3",
+        "price":"55",
+        "platform":"PS4",
+        "description":"persona 5 strike is a game that is set in the world of Persona 5.",
+        "trophy": {
+            "all":49,
+            "platinum": 0,
+            "gold": 7,
+            "silver": 11,
+            "bronze": 9
+        }
+
+    },
+    {
+        "id": 4,
+        "name": "Elden Ring",
+        "image": "./images/eldenRing_thumb.webp",
+        "background": "./images/eldenRing.jpeg",
+        "logo":"./images/eldenRing_logo.png",
+        "song":"./songs/eldenRing_song.mp3",
+        "price":"55",
+        "platform":"PS5",
+        "description":"Elden Ring is a game that is set in the world of Persona 5.",
+        "trophy": {
+            "all":49,
+            "platinum": 0,
+            "gold": 7,
+            "silver": 11,
+            "bronze": 9
+        }
+    },
+    {
+        "id": 5,
+        "name": "FIFA 21",
+        "image": "./images/fifa21_thumb.jpeg",
+        "background": "./images/fifa21.2.webp",
+        "logo":"./images/fifa21_logo.png",
+        "song":"./songs/fifa_song.mp3",
+        "price":"55",
+        "platform":"PS5",
+        "description":"FIFA 21 is a game that is set in the world of Persona 5.",
+        "trophy": {
+            "all":49,
+            "platinum": 0,
+            "gold": 7,
+            "silver": 11,
+            "bronze": 9
+        }
+    },
+    {
+        "id": 6,
+        "name": "Street Fighter",
+        "image": "./images/streetFighter_thumb.jpg",
+        "background": "./images/streetFighter.jpeg",
+        "logo":"./images/streetFighter_logo.webp",
+        "song":"./songs/streetFighter_song.mp3",
+        "price":"55",
+        "platform":"PS4",
+        "description":"Street Fighter is a game that is set in the world of Persona 5.",
+        "trophy": {
+            "all":49,
+            "platinum": 0,
+            "gold": 7,
+            "silver": 11,
+            "bronze": 9
+        }
+    },
+    {
+        "id": 7,
+        "name": "Syphon Filter I",
+        "image": "./images/syphonFilter_thumb.jpeg",
+        "background": "",
+        "logo":"./images/syphonFilter_logo.png",
+        "song":"./songs/syphonFilter.mp3",
+        "price":"55",
+        "platform":"PS1",
+        "description":"syphon Filter is a game that is set in the world of Persona 5.",
+
+        "trophy": {
+            "all":49,
+            "platinum": 0,
+            "gold": 7,
+            "silver": 11,
+            "bronze": 9
+        }
+    },
+    {
+        "id": 8,
+        "name": "Dark SoulsIII",
+        "image": "./images/darkSouls3_thumb.jpeg",
+        "background": "./images/darkSouls3.jpeg",
+        "logo":"./images/darkSouls3_logo.png",
+        "song":"./songs/darkSouls3_song.mp3",
+        "price":"55",
+        "platform":"PS4",
+        "description":"Dark Souls III is a game that is set in the world of Persona 5.",
+        "trophy": {
+            "all":49,
+            "platinum": 0,
+            "gold": 7,
+            "silver": 11,
+            "bronze": 9
+        }
+    },
+    {
+        "id": 9,
+        "name": "Hokuto No Ken",
+        "image": "./images/kenshiro_thumb.jpg",
+        "background": "",
+        "logo":"./images/kenshiro_logo.png",
+        "song":"./songs/kenshiro.mp3",
+        "price":"55",
+        "platform":"PS1",
+        "description":"Hokuto No Ken is a game that is set in the world of Persona 5.",
+        "trophy": {
+            "all":49,
+            "platinum": 0,
+            "gold": 7,
+            "silver": 11,
+            "bronze": 9
+        }
+
+    },
+    {
+        "id": 10,
+        "name": "Digimon World I",
+        "image": "./images/digimonWorld_thumb.webp",
+        "background": "./images/digimonWorld.png",
+        "logo":"./images/digimonWorld_logo.png",
+        "song":"./songs/digimonWorld.mp3",
+        "price":"55",
+        "platform":"PS1",
+        "description":"Digimon World is a game that is set in the world of Persona 5.",
+        "trophy": {
+            "all":49,
+            "platinum": 0,
+            "gold": 7,
+            "silver": 11,
+            "bronze": 9
+        }
+
+    },
+    {
+        "id": 11,
+        "name": "Stars War Battel Front 2 ",
+        "image": "./images/starWars_thumb.png",
+        "background": "./images/starWars.png",
+        "logo":"./images/starWars_logo.png",
+        "song":"./songs/starwars2_song.mp3",
+        "price":"55",
+        "platform":"PS4",
+        "description":"Star Wars Battle Front 2 is a game that is set in the world of Persona 5.",
+        "trophy": {
+            "all":49,
+            "platinum": 0,
+            "gold": 7,
+            "silver": 11,
+            "bronze": 9
+        }
+    }
+]
