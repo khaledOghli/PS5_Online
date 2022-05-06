@@ -1,5 +1,8 @@
-<img alt="APM" src="https://img.shields.io/apm/l/react?color=blue&label=PS5&logo=Playstation&logoColor=white">
-<h1>Introduction</h1>
+<span>
+  <img alt="APM" src="https://img.shields.io/apm/l/react?color=blue&label=PS5&logo=Playstation&logoColor=white">
+  <img alt="APM" src="https://img.shields.io/apm/l/react?color=blue&label=PLAYSTATION&logo=Playstation&logoColor=white">
+</span>
+  <h1>Introduction</h1>
 
 <h2>#PS5_Online Simulator</h2>
 <img width="1909" alt="PS5_sim" src="https://user-images.githubusercontent.com/65956317/167122033-02598fd7-de2c-4796-855e-9d6cc9ef1461.png">
