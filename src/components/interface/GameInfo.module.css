@@ -1,0 +1,81 @@
+.gameInfo_container {
+    margin-top: 20vh;
+    height:auto;
+    display: flex;
+    align-items: center;
+    /* overflow: hidden; */
+    padding: 0.5rem 0.2rem;
+}
+.gameInfo_details {
+    display: flex   ;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 0;
+}
+.gameInfo_details p{
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+
+.game_info {
+    height:auto;
+    display: flex;
+    align-items: center;
+}
+.game_logo {
+    width:auto;
+    max-width: calc(( 500px + 50vh ) / 2 );
+    height: auto;
+    max-height:180px;
+    object-fit: contain;
+}
+.flex_50 {
+    flex: 1 1 auto;
+    max-width: 75%;
+}
+.animate {
+    animation:revealBottom 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86) both,
+    fade 1s 0.1s ease-in-out both;
+}
+@keyframes fade {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+@keyframes revealBottom {
+    0% {
+        transform: translateY( 200px );
+    }
+    100% {
+        transform: translateY( 0 );
+    }
+}
+.more_info_buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+/* .example-enter {
+    opacity: 0.01;
+  }
+  
+  .example-enter.example-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+  }
+  
+  .example-leave {
+    opacity: 1;
+  }
+  
+  .example-leave.example-leave-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+  }
+   */
