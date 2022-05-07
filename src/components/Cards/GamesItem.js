@@ -25,7 +25,7 @@ function Item(props) {
   const [itemActive, setItemActive] = useState('');
   const [imageloaded, setImageLoaded] = useState('');
   const [imageindex, setImageIndex] = useState(0);
-  const [item, setItem] = useState(games[1]);
+  const [item, setItem] = useState(games[0]);
   const [audioFinished, setAudioFinished] = useState(true);
   const arrLength = gamesList.length;
   const element = useRef();
@@ -41,11 +41,14 @@ function Item(props) {
        await setGamesList();
        const el = element.current.querySelectorAll('.'+classes.ps_games_item_container)[0];
        el.click();
-
-    }, 1000);
+       
+    }, 2500);
  
   }, []);
-
+  useEffect(() => {
+    console.log('item : + ', item);
+    item?.id === 1 ? props.getPsStore(true) : props.getPsStore(false);
+  }, [item]);
   const divImg = {
     backgroundImage: `url(${itemActive.image})`,
   };
@@ -66,6 +69,7 @@ function Item(props) {
 
   }
   const ItemClicked = (event,item,index) => {
+    props.getComingSoon(false);
     if(document.querySelector('.selectedActiveItem')) {    
       const activeItem = document.querySelector('.selectedActiveItem');
       activeItem.classList.remove(classes.active,'selectedActiveItem');
@@ -154,24 +158,24 @@ function Item(props) {
     if(activeItem.nextSibling != null) {    
       activeItem.classList.remove(classes.active,'selectedActiveItem');
       activeItem.nextSibling.classList.add(classes.active,'selectedActiveItem');
-      // imageChanger(item,imageindex + 1);
-      // element.current.style.transform = `translateX(${-107 * (imageindex + 1)}px)`;
+      imageChanger(item,imageindex + 1);
+      element.current.style.transform = `translateX(${-107 * (imageindex + 1)}px)`;
       return imageindex + 1
     }
     else if(activeItem === 0){
       document.querySelectorAll('.game_item')[0].classList.add(classes.active,'selectedActiveItem');
-      // imageChanger(item,imageindex);
+      imageChanger(item,imageindex);
     }
   }
   const moveLeft = () => {
     const activeItem = document.querySelector('.selectedActiveItem') || 0;
-    // element.current.style.transform = `translateX(${-107 * (imageindex === 0 ? 0 : imageindex - 1)}px)`;
+    element.current.style.transform = `translateX(${-107 * (imageindex === 0 ? 0 : imageindex - 1)}px)`;
 
     playSound('audio-navigation');
     if(activeItem.previousSibling != null) {    
       activeItem.classList.remove(classes.active,'selectedActiveItem');
       activeItem.previousSibling.classList.add(classes.active,'selectedActiveItem');
-      // imageChanger(item,imageindex - 1);
+      imageChanger(item,imageindex - 1);
       return imageindex - 1;
     }
     else if(activeItem === 0){
@@ -179,13 +183,12 @@ function Item(props) {
       imageChanger(item,imageindex);
     }
   }
-
   const moveDown = () => {
     const activeItem     = document.querySelector('.selectedActiveItem');
     const currentSection = activeItem.closest('.ps_section');
     let nextSection = currentSection.nextSibling;
     let nextSelectable = nextSection.querySelector('.selectable') || 0;
-
+    props.getComingSoon(true);
     let loop = true;
     while(nextSection && loop) {
       if(nextSection.classList.contains('ps_section')) {
@@ -212,13 +215,12 @@ function Item(props) {
    
 
   }
-
   const moveUp = () => {
     const activeItem     = document.querySelector('.selectedActiveItem');
     const currentSection = activeItem.closest('.ps_section');
     let prevSection = currentSection.previousSibling;
     let prevSelectable = prevSection.querySelector('.selectable') || 0;
-
+    props.getComingSoon(false);
     let loop = true;
     while(prevSection && loop) {
       if(prevSection.classList.contains('ps_section')) {

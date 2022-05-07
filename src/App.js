@@ -13,19 +13,20 @@ function App() {
   const [gameAudio, setGameAudio] = useState('');
   const [gameItem, setgameItem] = useState('');
   const [loader, setloader] = useState(true);
+  const [isComingSoon, setisComingSoon] = useState(false);
+  const [isPsStoreSelected, setisPsStoreSelected] = useState(false);
 
-     
   return (
     <Fragment>
       <Sounds gameSound={gameAudio}/>
       {
-      // loader ? <Loader getstate={loader} getLoaderState={setloader} /> : 
+      loader ? <Loader getstate={loader} getLoaderState={setloader} /> : 
         <>
-          <Background imageindex={imageIndex} imagesrc={imageSrc}></Background>
+          <Background comingSoonSelected={isComingSoon}  imageindex={imageIndex} imagesrc={imageSrc}></Background>
           <Header />
-          <GamesItem getGameItem={setgameItem} getGameAudio={setGameAudio} getImageIndex={setimageIndex} getImage={setimageSrc} />
+          <GamesItem getPsStore={setisPsStoreSelected} getComingSoon={setisComingSoon}  getGameItem={setgameItem} getGameAudio={setGameAudio} getImageIndex={setimageIndex} getImage={setimageSrc} />
           <GameInfo getGameInfo={gameItem} />
-          <ComingSoon />
+          <ComingSoon getComingSoon={setisComingSoon} isPsStore={isPsStoreSelected} getGameItem={setgameItem} getImageIndex={setimageIndex} getImage={setimageSrc} />
           
         </>
   

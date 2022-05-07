@@ -35,8 +35,8 @@
     max-width: 75%;
 }
 .animate {
-    animation:revealBottom 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86) both,
-    fade 1s 0.1s ease-in-out both;
+    animation:revealBottom 0.7s cubic-bezier(0.785, 0.135, 0.15, 0.86) both,
+    fade 1s 0.2s ease-in-out both;
 }
 @keyframes fade {
     0% {

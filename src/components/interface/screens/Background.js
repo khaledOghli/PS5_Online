@@ -9,18 +9,21 @@ const slides = gamesList;
 
 const Background = (props) => {  
   // const [index, set] = useState(0);
+  // const [background, setbackground] = useState("");
+  // useEffect(() => {
+  //   setbackground(props.imagesrc)
+  // }, []);
   // const item = slides[index]; 
   // const increment = () => set(state => (state + 1) % slides.length);
   // useInterval(increment, 2000);
-    
- 
-   const transitions = useTransition(slides[props.imageindex || 0], item => item.id, {
+  console.log(props.imagesrc);
+   const transitions = useTransition(props.comingSoonSelected === true ? slides[0].mustSee[props.imageindex || 0] : slides[props.imageindex || 0], item => item.id, {
     from: { opacity: 0 },
     enter: { opacity: 1 },
     leave: { opacity: 0 },
     config: config.gentle,
   })
-
+  console.log(transitions);
   return transitions.map(({ item, props, key }) => {
     return <animated.div
       key={key}

@@ -139,7 +139,6 @@
     opacity:0;
 }
 
- 
 @keyframes revealleft {
     0% {
         opacity: 0;
@@ -150,6 +149,7 @@
         transform: translateX(0) scale(1);
     }
 }
+
 .ps_games_item_container.active .ps_games_item {
     width: 167px;
     height:165px;
@@ -167,8 +167,6 @@
     animation: animation-fade-left 100ms 0.26s linear forwards;
     z-index: -1;
 }
-
-
 
 @keyframes animation-fade-left {
     0% {

@@ -16,10 +16,18 @@
 .comingSoon_item {
     width: 340px;
     height:320px;
-    background-color:red;
+    background-color:transparent;
     border-radius:7px;
     position:relative;
     display: flex;
+    
+    animation-name: revealbottom;
+    transform-origin: bottom left;
+    animation-duration: 200ms;
+    animation-delay: calc(var(--comingsoon-order) * 150ms);
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    opacity:0;
 }
 .comingSoon_item::after {
     content:'';
@@ -61,4 +69,16 @@ figure figcaption {
 }
 figure figcaption h4 {
     margin: 0.7rem 0 1.3rem 0;
+}
+ 
+
+@keyframes revealbottom {
+    0% {
+        opacity: 0;
+        transform: translateY(50%) scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
 }

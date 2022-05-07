@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect,useState} from 'react'
 import gamesList from './../data/GamesData.json'
 import classes from './GameInfo.module.css'
 import {FiMoreHorizontal} from 'react-icons/fi'
@@ -7,9 +7,14 @@ import Trophies from '../Trophies/Trophies';
 const games = gamesList;
 
 function GameInfo(props) {
-    console.log(props.getGameInfo.logo)
+    const [isLoaded, setIsLoaded] = useState(false);
+    useEffect(() => {
+      setTimeout(() => {
+        setIsLoaded(true);
+      }, 3300);
+    },[])
   return (
-    <div className={`${props.getGameInfo.description ? classes.gameInfo_container + ' ps_section' : classes.gameInfo_container } `}>
+    isLoaded && <div className={`${props.getGameInfo.description ? classes.gameInfo_container + ' ps_section' : classes.gameInfo_container } `}>
       <div key={props.getGameInfo.logo} className={`${classes.animate +' '+ classes.flex_50}`}>
         <div className={classes.game_info}>
           {
@@ -40,7 +45,7 @@ function GameInfo(props) {
       </div>
        {
        props.getGameInfo.trophy && 
-       <Trophies /> 
+       <Trophies key={props.getGameInfo.id} getGameTrophy={props.getGameInfo} /> 
        }
     </div>
     

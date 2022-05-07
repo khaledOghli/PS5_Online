@@ -13,31 +13,31 @@
                 "id": 1,
                 "name": "Gotham Knights",
                 "image": "https://gmedia.playstation.com/is/image/SIEPDC/gotham-knights-store-art-01-02nov21$en",
-                "background": "https://gmedia.playstation.com/is/image/SIEPDC/gotham-knights-store-art-01-02nov21$en"
+                "background": "https://gmedia.playstation.com/is/image/SIEPDC/gotham-knights-store-art-01-02nov21$en?$native$"
             },
             {
                 "id": 2,
                 "name": "Hogwarts Legacy",
                 "image": "https://gmedia.playstation.com/is/image/SIEPDC/hogwarts-packshot-thumb-01-en-12jan21.jpg",
-                "background": "https://gmedia.playstation.com/is/image/SIEPDC/hogwarts-packshot-thumb-01-en-12jan21.jpg"
+                "background": "https://gmedia.playstation.com/is/image/SIEPDC/hogwarts-packshot-thumb-01-en-12jan21.jpg?$native$"
             },
             {
                 "id": 3,
                 "name": "Forspoken",
                 "image": "https://gmedia.playstation.com/is/image/SIEPDC/forspoken-pack-01-en-ps5-06jan22",
-                "background": "https://gmedia.playstation.com/is/image/SIEPDC/forspoken-pack-01-en-ps5-06jan22"
+                "background": "https://gmedia.playstation.com/is/image/SIEPDC/forspoken-pack-01-en-ps5-06jan22?$native$"
             },
             {
                 "id": 4,
                 "name": "God Of War Ragnarok",
                 "image": "https://gmedia.playstation.com/is/image/SIEPDC/god-of-war-ragnarok-store-art-01-10sep21$en",
-                "background": "https://gmedia.playstation.com/is/image/SIEPDC/god-of-war-ragnarok-store-art-01-10sep21$en"
+                "background": "https://gmedia.playstation.com/is/image/SIEPDC/god-of-war-ragnarok-store-art-01-10sep21$en?$native$"
             },
             {
                 "id": 5,
                 "name": "Oxenfree",
                 "image": "https://gmedia.playstation.com/is/image/SIEPDC/oxenfree-ii-lost-signals-store-art-01-ps4-03dec21$en",
-                "background": "https://gmedia.playstation.com/is/image/SIEPDC/oxenfree-ii-lost-signals-store-art-01-ps4-03dec21$en"
+                "background": "https://gmedia.playstation.com/is/image/SIEPDC/oxenfree-ii-lost-signals-store-art-01-ps4-03dec21$en?$native$"
             }
         ]
     },
@@ -91,11 +91,11 @@
         "platform":"PS5",
         "description":"Elden Ring is a game that is set in the world of Persona 5.",
         "trophy": {
-            "all":49,
+            "all":42,
             "platinum": 0,
-            "gold": 7,
-            "silver": 11,
-            "bronze": 9
+            "gold": 5,
+            "silver": 19,
+            "bronze": 10
         }
     },
     {
@@ -109,10 +109,10 @@
         "platform":"PS5",
         "description":"FIFA 21 is a game that is set in the world of Persona 5.",
         "trophy": {
-            "all":49,
+            "all":36,
             "platinum": 0,
-            "gold": 7,
-            "silver": 11,
+            "gold": 2,
+            "silver": 6,
             "bronze": 9
         }
     },
@@ -127,11 +127,11 @@
         "platform":"PS4",
         "description":"Street Fighter is a game that is set in the world of Persona 5.",
         "trophy": {
-            "all":49,
+            "all":48,
             "platinum": 0,
-            "gold": 7,
-            "silver": 11,
-            "bronze": 9
+            "gold": 9,
+            "silver": 18,
+            "bronze": 11
         }
     },
     {
@@ -146,11 +146,11 @@
         "description":"syphon Filter is a game that is set in the world of Persona 5.",
 
         "trophy": {
-            "all":49,
+            "all":23,
             "platinum": 0,
-            "gold": 7,
-            "silver": 11,
-            "bronze": 9
+            "gold": 6,
+            "silver": 9,
+            "bronze": 5
         }
     },
     {
@@ -182,11 +182,11 @@
         "platform":"PS1",
         "description":"Hokuto No Ken is a game that is set in the world of Persona 5.",
         "trophy": {
-            "all":49,
+            "all":56,
             "platinum": 0,
-            "gold": 7,
+            "gold": 21,
             "silver": 11,
-            "bronze": 9
+            "bronze": 18
         }
 
     },

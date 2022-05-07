@@ -177,7 +177,7 @@ class Canvas extends Component {
 		return (
 			<>
                 <div className={`preloader ${this.animateFadeVideo ? 'fadingOut' : ''}`}>
-                    <video width="100%" height="100%" muted preload="auto">
+                    <video width="100%" height="100%" preload="auto">
                         <source src={video} type="video/mp4" />
                         Your browser does not support HTML5 video.
                     </video>
